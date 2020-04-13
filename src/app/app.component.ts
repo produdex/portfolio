@@ -20,6 +20,6 @@ export class AppComponent {
       this.result = this.num1 * this.num2;
   }
   divide() {
-      this.result = this.num1 % this.num2;
+      this.result = this.num1 / this.num2;
   }
 }
