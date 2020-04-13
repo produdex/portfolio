@@ -1,7 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
 body{
-    font-family: 'Exo', sans-serif;
-
+    color: white;
 }
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
@@ -10,11 +9,13 @@ body{
     padding: 0px;
 }
 
+body{
+    font-family: 'Exo', sans-serif;
+}
 
 
 .context {
     width: 100%;
-    position: absolute;
     top:50vh;
 
 }
@@ -36,7 +37,6 @@ body{
 }
 
 .circles{
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
