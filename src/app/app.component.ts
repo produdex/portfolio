@@ -1,25 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Calculator App';
   num1: number;
   num2: number;
   result: number;
-  add() {
-      this.result = this.num1 + this.num2;
+  ngOnInit() {
+    setTimeout(this.showPage, 3000);
   }
-  substract() {
-      this.result = this.num1 - this.num2;
+  showPage() {
+    document.getElementById('loader').style.display = 'none';
+    document.getElementById('myDiv').style.display = 'block';
+    document.getElementById('div1').style.display = 'none';
+
   }
-  multiply() {
-      this.result = this.num1 * this.num2;
-  }
-  divide() {
-      this.result = this.num1 / this.num2;
-  }
+
 }

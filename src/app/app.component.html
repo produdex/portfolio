@@ -1,38 +1,24 @@
-<div class="container">
-  <br />
-  <div class="row">
-      <h1>
-          Welcome to {{ title }}!
-      </h1>
+
+<div class="box" id="loader">
+  <div class="head">
+    <div class="lefteye">
+
+    </div>
+    <div class="righteye">
+
+    </div>
+    <div class="mouth">
+
+    </div>
   </div>
-  <br />
-  <div class="row">
-      <div class="col-md-6">
-          <input type="number" [(ngModel)]="num1" placeholder="Enter Number 1" class="form-control" />
-      </div>
-      <div class="col-md-6">
-          <input type="number" [(ngModel)]="num2" placeholder="Enter Number 2" class="form-control" />
-      </div>
+</div>
+<div class="container animate-bottom" id="myDiv" style="display:none;">
+  <div class="container">
+    <h1>Hello Stranger</h1>
   </div>
-  <br />
-  <div class="row text-center">
-      <div class="col-md-3">
-          <button class="btn btn-info" (click)='add()'>Add</button>
-      </div>
-      <div class="col-md-3">
-          <button class="btn btn-info" (click)='substract()'>Substract</button>
-      </div>
-      <div class="col-md-3">
-          <button class="btn btn-info" (click)='multiply()'>Multiply</button>
-      </div>
-      <div class="col-md-3">
-          <button class="btn btn-info" (click)='divide()'>Divide</button>
-      </div>
-  </div>
-  <br />
-  <div class="row">
-      <div class="col-md-5 col-md-offset-4">
-          <h2>Result = {{result}} </h2>
-      </div>
-  </div>
+  <br>
+</div>
+
+<div class="container animate-up" id="div1">
+  <h1>Awwww! Look who's here</h1>
 </div>
