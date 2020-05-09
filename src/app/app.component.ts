@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   showPage() {
     document.getElementById('loader').style.display = 'none';
     document.getElementById('myDiv').style.display = 'block';
-    document.getElementById('div1').style.display = 'none';
+    document.getElementById('myDiv1').style.display = 'block';
 
   }
 
