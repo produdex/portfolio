@@ -41,12 +41,19 @@ p {
 }
 
 .inner-header {
-  height:28vh;
+  height:35vh;
   width:100%;
   margin: 0;
-  padding: 0;
+  padding: 116px;
 }
-
+@media screen and (max-width: 841px) {
+  .inner-header {
+    height:35vh;
+    width:100%;
+    margin: 0;
+    padding: 94px;
+  }
+}
 .flex { /*Flexbox for containers*/
   display: flex;
   justify-content: center;
