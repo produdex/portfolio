@@ -149,12 +149,18 @@
   text-align: center;
 }
 .animate-bottom {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-repeat: round ;
   background-image: url('https://images.hdqwalls.com/download/plants-blurred-silhouette-sunset-4k-69-1360x768.jpg');
   -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
   animation-name: animatebottom;
-  animation-duration: 1s
+  animation-duration: 1s;
+  width: 100%;
 }
 
 @-webkit-keyframes animatebottom {
@@ -166,24 +172,7 @@
   from{ bottom:-100px; opacity:0 }
   to{ bottom:0; opacity:1 }
 }
-.animate-up {
-  position: relative;
-  background-image:linear-gradient(rgb(68, 65, 65),white);
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
 
-@-webkit-keyframes animatebottom {
-  from { top:-100px; opacity:0 }
-  to { top:0px; opacity:1 }
-}
-
-@keyframes animatebottom {
-  from{ top:-100px; opacity:0 }
-  to{ top:0; opacity:1 }
-}
 :root {
   --main-part-color: rgb(255, 255, 255); /* Change this color to change the color of the face parts */
 }
