@@ -155,11 +155,6 @@
   min-width: 100%;
   min-height: 100%;
   background-repeat: round ;
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
-  /* Full height */
   height: 100%;
   -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
@@ -169,34 +164,28 @@
 }
 .bg-image {
   /* The image used */
-  background-image: url('../src/assets/Best-HD-Background-Ever.jpg');
-
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
-  /* Full height */
+  background-image: url('https://www.harvard.co.uk/wp-content/uploads/2016/09/Train-line.jpg');
   height: 100%;
-
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
+  box-shadow: 5px 10px 8px #1d1c1c;
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
+  position: relative;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 44%);
   z-index: 2;
   width: 80%;
   padding: 20px;
   text-align: center;
+  border-radius: 4px;
 }
 
 @-webkit-keyframes animatebottom {

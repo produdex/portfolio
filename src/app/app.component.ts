@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
     document.getElementById('myDiv').style.display = 'block';
     document.getElementById('myDiv1').style.display = 'block';
 
+
   }
 
 }
