@@ -104,8 +104,8 @@ $active-item-color: #010038;
   position: relative;
   font-weight: bold;
   left: 50%;
+  z-index: 0;
   transform: translate(-50%, 44%);
-  z-index: 9999;
   width: 100%;
   top: -35px;
   padding: 20px;
@@ -113,7 +113,7 @@ $active-item-color: #010038;
   border-radius: 8px;
   &.fixed {
     position: fixed;
-
+    z-index: 9999;
   }
 }
 
