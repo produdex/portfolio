@@ -4,6 +4,7 @@ import {FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { Section1Component } from './section1/section1.component';
 import { Section2Component } from './section2/section2.component';
+import * as $ from 'jquery';
 
 @NgModule({
   declarations: [

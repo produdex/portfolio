@@ -1,5 +1,4 @@
 import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular/core';
-
 @Component({
   selector: 'app-section2',
   templateUrl: './section2.component.html',
@@ -8,13 +7,28 @@ import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular
 
 export class Section2Component implements OnInit {
   navFixed = false;
-  private scrollOffset = 812;
-  @ViewChild('mainScreen', { read: ElementRef, static: false }) elementView: ElementRef;
+  private scrollOffset = 813;
   viewHeight: number;
   constructor() { }
 
   ngOnInit() {
-
+    $(document).ready(function () {
+      const sectionIds = $('a.nav-link');
+      $(document).scroll(function () {
+        sectionIds.each(function () {
+          const container = $(this).attr('href');
+          const containerOffset = $(container).offset().top;
+          const containerHeight = $(container).outerHeight();
+          const containerBottom = containerOffset + containerHeight;
+          const scrollPosition = $(document).scrollTop();
+          if (scrollPosition < containerBottom - 80 && scrollPosition >= containerOffset - 80) {
+            $(this).addClass('active');
+          } else {
+            $(this).removeClass('active');
+          }
+        });
+      });
+    });
   }
   @HostListener('window:scroll')
   onWindowScroll() {

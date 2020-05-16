@@ -2,6 +2,7 @@ html {
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 #stars {
@@ -95,7 +96,9 @@ $active-item-color: #010038;
 .fa-2x {
   font-size: 26px;
 }
-
+a {
+  display: block;
+}
 .menu-container {
   height: 80px;
   box-shadow: 5px 10px 8px #1d1c1c;
@@ -252,3 +255,92 @@ body {
     background: $bg-color;
     font-family: 'Open Sans';
 }
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav-container{
+  height: 80px;
+  box-shadow: 5px 10px 8px #1d1c1c;
+  background-color:#124857;
+  color: white;
+  position: relative;
+  font-weight: bold;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, 44%);
+  width: 100%;
+  top: -35px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  &.fixed {
+    position: sticky;
+    z-index: 9999;
+    height: 80px;
+    box-shadow: 5px 10px 8px #1d1c1c;
+    background-color: #124857;
+    color: white;
+    font-weight: bold;
+    left: 50%;
+    transform: translate(0%, 1%);
+    width: 100%;
+    top: -1px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+  }
+}
+
+#nav{
+  display: flex;
+  justify-content: space-evenly;
+  height: 3em;
+  line-height: 3em;
+}
+
+a:link, a:visited, a:active{
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+
+a:hover{
+  color: #85D6CB;
+}
+
+.nav-link{
+  padding: 0 1em;
+  margin: 0 3em;
+  border-radius: 2em;
+  transition: all .4s;
+}
+
+a.active{
+  color: #fff;
+}
+
+a.nav-link.active:hover{
+  padding: 0 4em;
+  margin: 0;
+}
+
+#home, a.active[href="#home"]{
+  background-color: #85D6CB;
+}
+
+#about, a.active[href="#about"]{
+  background-color: #339CC7;
+}
+
+#work, a.active[href="#work"]{
+  background-color: #0378A6;
+}
+
+#contact, a.active[href="#contact"]{
+  background-color: #005778;
+}
+
+

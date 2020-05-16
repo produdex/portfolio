@@ -6,7 +6,7 @@
     This is where  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; expectation meets
   </span>
 </div>
-<div class="menu-container" [class.fixed]="navFixed" #mainScreen>
+<!-- <div class="menu-container"  #mainScreen>
 
   <div class="menu" id="menu">
 
@@ -14,7 +14,7 @@
     <label class="tab" for="radio-0">
       <div class="item">
         <i class="fas fa-home fa-2x"></i>
-        <div class="item-title">Home</div>
+        <div class="item-title"><a href="#home">Home</a></div>
       </div>
     </label>
 
@@ -22,7 +22,7 @@
     <label class="tab" for="radio-1">
       <div class="item">
         <i class="fas fa-chart-pie fa-2x"></i>
-        <div class="item-title">Education</div>
+        <div class="item-title"><a href="#about">About</a></div>
       </div>
     </label>
 
@@ -30,7 +30,7 @@
     <label class="tab" for="radio-2">
       <div class="item">
         <i class="fas fa-truck fa-2x"></i>
-        <div class="item-title">Projects</div>
+        <div class="item-title"><a href="#work">Work</a></div>
       </div>
     </label>
 
@@ -38,7 +38,7 @@
     <label class="tab" for="radio-3">
       <div class="item">
         <i class="fas fa-shopping-cart fa-2x"></i>
-        <div class="item-title">Contact</div>
+        <div class="item-title"><a href="#contact">Contact</a></div>
       </div>
     </label>
 
@@ -46,8 +46,38 @@
       <div class="blob"></div>
     </div>
   </div>
+</div> -->
+<div id="nav-container" [class.fixed]="navFixed">
+  <div id="nav">
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#work" class="nav-link">Work</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
 </div>
-<div style="height: 1000px;">
 
-</div>
+<section id="home">
+  <div style="height:400px">
+    <h1>Section 1</h1>
+  </div>
+</section>
+<section id="about">
+  <div style="height:400px">
+    <h1>Section 2</h1>
+  </div>
+</section>
+<section id="work">
+  <div style="height:400px">
+    <h1>Section 3</h1>
+  </div>
+</section>
+<section id="contact">
+  <div style="height:400px">
+    <h1>Section 4</h1>
+  </div>
+</section>
+
+
+
+
 
