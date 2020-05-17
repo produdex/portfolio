@@ -26,6 +26,15 @@ export class Section2Component implements OnInit {
           } else {
             $(this).removeClass('active');
           }
+          if ($(window).scrollTop() > 500) {
+
+            $('.bg').addClass('show');
+
+          } else {
+
+            $('.bg').removeClass('show');
+
+          }
         });
       });
     });

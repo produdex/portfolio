@@ -96,9 +96,7 @@ $active-item-color: #010038;
 .fa-2x {
   font-size: 26px;
 }
-a {
-  display: block;
-}
+
 .menu-container {
   height: 80px;
   box-shadow: 5px 10px 8px #1d1c1c;
@@ -255,10 +253,7 @@ body {
     background: $bg-color;
     font-family: 'Open Sans';
 }
-body{
-  margin: 0px;
-  padding: 0px;
-}
+
 
 #nav-container{
   height: 80px;
@@ -267,11 +262,11 @@ body{
   color: white;
   position: relative;
   font-weight: bold;
-  left: 50%;
+  //left: 50%;
   z-index: 0;
-  transform: translate(-50%, 44%);
+  //transform: translate(-50%, 44%);
   width: 100%;
-  top: -35px;
+  top: 1px;
   padding: 20px;
   text-align: center;
   border-radius: 8px;
@@ -283,8 +278,8 @@ body{
     background-color: #124857;
     color: white;
     font-weight: bold;
-    left: 50%;
-    transform: translate(0%, 1%);
+    //left: 50%;
+    //transform: translate(0%, 1%);
     width: 100%;
     top: -1px;
     padding: 20px;
@@ -343,4 +338,18 @@ a.nav-link.active:hover{
   background-color: #005778;
 }
 
+.bg {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.transition {
+  // -webkit-transition: all 1s ease;
+	// -moz-transition: all 1s ease;
+	// -o-transition: all 1s ease-in-out;
+  transition: all 2s ease-out;
+}
 
