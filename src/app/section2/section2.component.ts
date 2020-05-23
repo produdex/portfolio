@@ -26,13 +26,13 @@ export class Section2Component implements OnInit {
           } else {
             $(this).removeClass('active');
           }
-          if ($(window).scrollTop() > 500) {
+          if ($(window).scrollTop() > 300) {
 
-            $('.bg').addClass('show');
+            $('.ng').addClass('show');
 
           } else {
 
-            $('.bg').removeClass('show');
+            $('.ng').removeClass('show');
 
           }
         });
