@@ -79,7 +79,15 @@ img {
     max-width: 100%;
 }
 
-h1,
+h1{
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    background: linear-gradient(60deg, #543ab7 0%, #00acc1 100%);
+    box-shadow: 5px 10px 8px #1d1c1c;
+    font-size: 43px;
+    letter-spacing: 15px;
+    color: white;
+}
 h2 {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
