@@ -1,6 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
-
+html{
+  scroll-behavior: smooth;
+}
 #myDiv {
   display: none;
   text-align: center;
@@ -27,10 +29,10 @@
 }
 .bg-image {
   /* The image used */
-  background-image: url('https://www.harvard.co.uk/wp-content/uploads/2016/09/Train-line.jpg');
+  background-image: url('./assets/bg.jpg');
   height: 100%;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
+  // filter: blur(5px);
+  // -webkit-filter: blur(5px);
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
