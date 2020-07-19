@@ -297,9 +297,10 @@ body {
 
 a:link, a:visited, a:active{
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  color: #000;
+  font-family: Lato,sans-serif;
+  font-weight: 1000;
+  color: white;
+  letter-spacing: 6px;
 }
 
 a:hover{
@@ -307,6 +308,7 @@ a:hover{
 }
 
 .nav-link{
+  font-family: Lato,sans-serif;
   padding: 0 1em;
   margin: 0 3em;
   border-radius: 2em;
@@ -315,10 +317,18 @@ a:hover{
 
 @media screen and (max-width: 768px) {
   .nav-link{
+    font-family: Lato,sans-serif;
     padding: 0 1em;
     margin: 0 0;
     border-radius: 2em;
     transition: all .4s;
+  }
+  a:link, a:visited, a:active{
+    text-decoration: none;
+    font-family: Lato,sans-serif;
+    font-weight: 1000;
+    color: white;
+    letter-spacing: 0px;
   }
 }
 a.active{
@@ -332,18 +342,22 @@ a.nav-link.active:hover{
 
 #home, a.active[href="#home"]{
   background-color: #85D6CB;
+  color: black;
 }
 
 #about, a.active[href="#about"]{
   background-color: #339CC7;
+  color: black;
 }
 
 #work, a.active[href="#work"]{
   background-color: #0378A6;
+  color: black;
 }
 
 #contact, a.active[href="#contact"]{
   background-color: #005778;
+  color: black;
 }
 
 .ng {
