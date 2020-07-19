@@ -14,7 +14,8 @@
 <div class="bg-image animate-bottom" id="myDiv1" style="display:none;"></div>
 <div class="" id="myDiv" style="display:none;">
   <div class="find-me">
-    <div class="social-contact"><a href="#" target="_blank"><img src="./assets/icon1.png" class="img-responsive img-contact"></a></div>
+    <div class="social-contact"><a href="#" target="_blank"><img src="./assets/icon1.png"
+          class="img-responsive img-contact"></a></div>
     <div class="social-contact"><a href="#"><img src="./assets/icon2.png" class="img-responsive img-contact"></a>
     </div>
     <div class="social-contact"><a href="#"><img src="./assets/icon3.png" class="img-responsive img-contact"></a>
@@ -33,28 +34,10 @@
         <button class='open btn' (click)='hireMe()'>Hire</button>
       </div>
 
-      <!-- <div class="social-icons">
-		<div class="icon">
-			<a href="/"><i class="fab fa-dribbble"></i></a>
-			<h4>12.8k</h4>
-			<p>Followers</p>
-		</div>
-
-		<div class="icon">
-			<a href="#"><i class="fab fa-behance"></i></a>
-			<h4>12.8k</h4>
-			<p>Followers</p>
-		</div>
-
-		<div class="icon">
-			<a href="#"><i class="fab fa-twitter"></i></a>
-			<h4>12.8k</h4>
-			<p>Followers</p>
-		</div>
-	</div> -->
     </div>
-    <!-- <h1 style="font-size:50px">Hi there, I'm Prodyut Das</h1>
-    <p>And I'm a Web Developer</p> -->
+  </div>
+  <div class = "flex">
+    <button class="z-top" *ngIf="isShow" (click)="gotoTop()"><img height="70" src="./assets/arrow.png"/></button>
   </div>
   <app-section1></app-section1>
   <app-section2></app-section2>
@@ -66,5 +49,4 @@
       </div>
     </div>
   </div>
-
 </div>

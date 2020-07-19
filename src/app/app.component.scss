@@ -262,7 +262,18 @@ $shadow: 0 13px 26px rgba(#000, 0.2),
         text-decoration: none;
     }
 }
-
+.flex{
+    display: flex;
+    justify-content: flex-end;
+}
+.z-top{
+    z-index: 9999;
+    position: fixed;
+    bottom: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+}
 button {
     padding: 10px 15px;
     font-weight: bold;
