@@ -1,215 +1,247 @@
 @import "~bootstrap/scss/bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
-html{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
+
 #myDiv {
-  display: none;
-  text-align: center;
+    display: none;
+    text-align: center;
 }
+
 .header {
-  position:relative;
-  text-align:center;
-  color:white;
+    position: relative;
+    text-align: center;
+    color: white;
 }
+
 .animate-bottom {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  background-repeat: round ;
-  height: 100%;
-  z-index: -1;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s;
-  width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-repeat: round;
+    height: 100%;
+    z-index: -1;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+    width: 100%;
 }
+
 .bg-image {
-  /* The image used */
-  background-image: url('./assets/bg.jpg');
-  height: 100%;
-  // filter: blur(5px);
-  // -webkit-filter: blur(5px);
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    /* The image used */
+    background-image: url('./assets/bg.jpg');
+    height: 100%;
+    // filter: blur(5px);
+    // -webkit-filter: blur(5px);
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .bg-text {
-  box-shadow: 5px 4px 8px #000000;
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 44%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-  border-radius: 8px;
+    box-shadow: 5px 4px 8px #000000;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 44%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 840px) {
+    .bg-text {
+        box-shadow: 5px 3px 8px #000000;
+    }
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0px; opacity:1 }
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
 }
 
 @keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 :root {
-  --main-part-color: rgb(255, 255, 255); /* Change this color to change the color of the face parts */
+    --main-part-color: rgb(255, 255, 255);
+    /* Change this color to change the color of the face parts */
 }
+
 body {
-  background-color: rgb(41, 41, 40); /* Change this color to change the color of the background */
+    background-color: rgb(41, 41, 40);
+    /* Change this color to change the color of the background */
 }
+
 .box {
-  margin: auto;
-  height: 500px;
-  width: 500px;
-  position: relative;
-  display: block;
-  margin-top: 5%;
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    display: block;
+    margin-top: 5%;
 }
+
 .head {
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-}
-.lefteye {
-  position: absolute;
-  height: 100px;
-  width: 100px;
-  border: solid var(--main-part-color) 10px;
-  border-color: var(--main-part-color) transparent transparent transparent;
-  top: 35%;
-  left: 20%;
-  animation-name: lefteyewink;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-.righteye {
-  position: absolute;
-  height: 100px;
-  width: 100px;
-  border: solid var(--main-part-color) 10px;
-  border-color: var(--main-part-color) transparent transparent transparent;
-  top: 35%;
-  left: 60%;
-  animation-name: righteyewink;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-.mouth {
-  position: absolute;
-  height: 0px;
-  width: 300px;
-  border: solid var(--main-part-color) 10px;
-  border-radius: 0 0 50% 50%;
-  border-color: transparent transparent var(--main-part-color) transparent;
-  top: 70%;
-  left: 20%;
-  animation-name: smile;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes lefteyewink {
-  0% {
-    height: 0px;
-    width: 100px;
-    border: solid var(--main-part-color) 10px;
-    border-color: var(--main-part-color) transparent transparent transparent;
-    top: 35%;
-    left: 20%;
-  }
-  33% {
-    height: 100px;
-    width: 50px;
-    border: solid var(--main-part-color) 5px;
-    background-color: var(--main-part-color);
-    border-color: var(--main-part-color) transparent transparent transparent;
+    height: 500px;
+    width: 500px;
     border-radius: 50%;
-    top: 30%;
-    left: 25%;
-  }
-  66% {
-    height: 100px;
-    width: 100px;
-    border: solid var(--main-part-color) 10px;
-    border-radius: 50% 50% 0 0;
-    background-color: transparent;
-    border-color: var(--main-part-color) transparent transparent transparent;
-    top: 35%;
-    left: 20%;
-  }
-  100% {
-    height: 100px;
-    width: 100px;
-    border: solid var(--main-part-color) 10px;
-    background-color: transparent;
-    border-radius: 50% 50% 0 0;
-    border-color: var(--main-part-color) transparent transparent transparent;
-    top: 35%;
-    left: 20%;
-  }
 }
 
-@keyframes righteyewink {
-  0% {
-    height: 0px;
+.lefteye {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: solid var(--main-part-color) 10px;
+    border-color: var(--main-part-color) transparent transparent transparent;
+    top: 35%;
+    left: 20%;
+    animation-name: lefteyewink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.righteye {
+    position: absolute;
+    height: 100px;
     width: 100px;
     border: solid var(--main-part-color) 10px;
     border-color: var(--main-part-color) transparent transparent transparent;
     top: 35%;
     left: 60%;
-  }
-  33% {
-    height: 100px;
-    width: 50px;
-    border: solid var(--main-part-color) 5px;
-    background-color: var(--main-part-color);
-    border-color: var(--main-part-color) transparent transparent transparent;
-    border-radius: 50%;
-    top: 30%;
-    left: 65%;
-  }
-  100% {
-    height: 100px;
-    width: 50px;
-    border: solid var(--main-part-color) 5px;
-    background-color: var(--main-part-color);
-    border-color: var(--main-part-color) transparent transparent transparent;
-    border-radius: 50%;
-    top: 30%;
-    left: 65%;
-  }
+    animation-name: righteyewink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.mouth {
+    position: absolute;
+    height: 0px;
+    width: 300px;
+    border: solid var(--main-part-color) 10px;
+    border-radius: 0 0 50% 50%;
+    border-color: transparent transparent var(--main-part-color) transparent;
+    top: 70%;
+    left: 20%;
+    animation-name: smile;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes lefteyewink {
+    0% {
+        height: 0px;
+        width: 100px;
+        border: solid var(--main-part-color) 10px;
+        border-color: var(--main-part-color) transparent transparent transparent;
+        top: 35%;
+        left: 20%;
+    }
+    33% {
+        height: 100px;
+        width: 50px;
+        border: solid var(--main-part-color) 5px;
+        background-color: var(--main-part-color);
+        border-color: var(--main-part-color) transparent transparent transparent;
+        border-radius: 50%;
+        top: 30%;
+        left: 25%;
+    }
+    66% {
+        height: 100px;
+        width: 100px;
+        border: solid var(--main-part-color) 10px;
+        border-radius: 50% 50% 0 0;
+        background-color: transparent;
+        border-color: var(--main-part-color) transparent transparent transparent;
+        top: 35%;
+        left: 20%;
+    }
+    100% {
+        height: 100px;
+        width: 100px;
+        border: solid var(--main-part-color) 10px;
+        background-color: transparent;
+        border-radius: 50% 50% 0 0;
+        border-color: var(--main-part-color) transparent transparent transparent;
+        top: 35%;
+        left: 20%;
+    }
+}
+
+@keyframes righteyewink {
+    0% {
+        height: 0px;
+        width: 100px;
+        border: solid var(--main-part-color) 10px;
+        border-color: var(--main-part-color) transparent transparent transparent;
+        top: 35%;
+        left: 60%;
+    }
+    33% {
+        height: 100px;
+        width: 50px;
+        border: solid var(--main-part-color) 5px;
+        background-color: var(--main-part-color);
+        border-color: var(--main-part-color) transparent transparent transparent;
+        border-radius: 50%;
+        top: 30%;
+        left: 65%;
+    }
+    100% {
+        height: 100px;
+        width: 50px;
+        border: solid var(--main-part-color) 5px;
+        background-color: var(--main-part-color);
+        border-color: var(--main-part-color) transparent transparent transparent;
+        border-radius: 50%;
+        top: 30%;
+        left: 65%;
+    }
 }
 
 @keyframes smile {
-  0% {
-    height: 0px;
-    top: 70%;
-  }
-  33% {
-    height: 150px;
-    top: 45%;
-  }
-  66% {
-    height: 150px;
-    top: 45%;
-  }
-  100% {
-    height: 150px;
-    top: 45%;
-  }
+    0% {
+        height: 0px;
+        top: 70%;
+    }
+    33% {
+        height: 150px;
+        top: 45%;
+    }
+    66% {
+        height: 150px;
+        top: 45%;
+    }
+    100% {
+        height: 150px;
+        top: 45%;
+    }
 }
