@@ -13,7 +13,6 @@ export class AppComponent implements OnInit {
   isShow: boolean;
   topPosToStartShowing = 1;
   ngOnInit() {
-
     setTimeout(this.showPage, 3000);
     this.hireMe();
   }
