@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+SC:400,700,400italic,700italic);
 $purple-gradient: linear-gradient(to bottom right, #c90a6d, #ff48a0);
-
 .container {
     font-family: "Lato", sans-serif;
     max-width: 980px;
@@ -212,7 +211,8 @@ a.expand {
     margin-top: 70px;
     margin-bottom: 70px;
     clear: both;
-    height: 500px;
+    height: 750px;
+    padding: 106px;
 }
 
 .contact h3 {
@@ -304,6 +304,7 @@ a.expand {
     animation-name: bounce;
     -moz-animation-name: bounce;
 }
+
 .btn {
     color: #fff;
     width: 130px;

@@ -7,6 +7,8 @@ import { Section2Component } from './section2/section2.component';
 import * as $ from 'jquery';
 import { SectionHomeComponent } from './section2/section-home/section-home.component';
 import { SectionContactComponent } from './section2/section-contact/section-contact.component';
+import { SectionAboutComponent } from './section2/section-about/section-about.component';
+import { SectionWorkComponent } from './section2/section-work/section-work.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { SectionContactComponent } from './section2/section-contact/section-cont
     Section1Component,
     Section2Component,
     SectionHomeComponent,
-    SectionContactComponent
+    SectionContactComponent,
+    SectionAboutComponent,
+    SectionWorkComponent
   ],
   imports: [
     BrowserModule,

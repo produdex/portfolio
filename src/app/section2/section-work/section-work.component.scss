@@ -1,0 +1,7 @@
+#bg{
+    width: 100%;
+    height: 800px;
+    background:#0378A6;
+    background:radial-gradient(circle, #ffffff96 0%, #0378A6 83%);
+    clip-path: polygon(25% 0%, 75% 0%, 51% 51%, 75% 100%, 25% 100%, 0% 50%);
+}
