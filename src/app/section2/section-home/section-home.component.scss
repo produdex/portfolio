@@ -70,7 +70,7 @@ body {
     font-size: 100%;
     font-family: "Droid Serif", serif;
     color: #7f8c97;
-    background-color: #e9f0f5;
+    background-color: #51879b;
 }
 
 a {
@@ -82,17 +82,6 @@ a {
 img {
     max-width: 100%;
 }
-
-h1 {
-    font-family: Lato, sans-serif;
-    font-weight: 300;
-    background: linear-gradient(60deg, #543ab7 0%, #00acc1 100%);
-    box-shadow: 5px 10px 8px #1d1c1c;
-    font-size: 43px;
-    letter-spacing: 15px;
-    color: white;
-}
-
 h2 {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
@@ -362,9 +351,10 @@ header h1 {
 .cd-timeline-content {
     position: relative;
     margin-left: 60px;
-    background: white;
+    background: #124857;
     border-radius: 0.25em;
     padding: 1em;
+    color: white;
     box-shadow: 0 3px 0 #d7e4ed;
 }
 
@@ -399,7 +389,7 @@ header h1 {
 }
 
 .cd-timeline-content h2 {
-    color: #303e49;
+    color: white;
 }
 
 .cd-timeline-content p,
@@ -496,7 +486,6 @@ button {
     height: 40px;
     color: #fff;
     border-radius: 5px;
-    padding: 10px 25px;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     background: transparent;
@@ -586,7 +575,7 @@ button {
         top: 24px;
         left: 100%;
         border-color: transparent;
-        border-left-color: white;
+        border-left-color: #124857;
     }
     .cd-timeline-content .cd-read-more {
         float: left;
@@ -607,7 +596,7 @@ button {
         left: auto;
         right: 100%;
         border-color: transparent;
-        border-right-color: white;
+        border-right-color: #4e6d76;
     }
     .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
         float: right;

@@ -9,6 +9,7 @@ import { SectionHomeComponent } from './section2/section-home/section-home.compo
 import { SectionContactComponent } from './section2/section-contact/section-contact.component';
 import { SectionAboutComponent } from './section2/section-about/section-about.component';
 import { SectionWorkComponent } from './section2/section-work/section-work.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SectionWorkComponent } from './section2/section-work/section-work.compo
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]

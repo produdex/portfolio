@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   topPosToStartShowing = 1;
   ngOnInit() {
     setTimeout(this.showPage, 3000);
-    this.hireMe();
+    //this.hireMe();
   }
   showPage() {
     document.getElementById('loader').style.display = 'none';
@@ -22,21 +22,21 @@ export class AppComponent implements OnInit {
     document.getElementById('myDiv1').style.display = 'block';
 
   }
-  hireMe() {
-    const doc = document;
-    const overlay = doc.querySelector('.overlay');
+  // hireMe() {
+  //   const doc = document;
+  //   const overlay = doc.querySelector('.overlay');
 
-    // Open the modal
-    // tslint:disable-next-line: only-arrow-functions
-    doc.querySelector('.open').addEventListener('click', () => {
-      overlay.classList.add('show');
-    });
+  //   // Open the modal
+  //   // tslint:disable-next-line: only-arrow-functions
+  //   doc.querySelector('.open').addEventListener('click', () => {
+  //     overlay.classList.add('show');
+  //   });
 
-    // Close the modal
-    doc.querySelector('.close').addEventListener('click', () => {
-      overlay.classList.remove('show');
-    });
-  }
+  //   // Close the modal
+  //   doc.querySelector('.close').addEventListener('click', () => {
+  //     overlay.classList.remove('show');
+  //   });
+  // }
   @HostListener('window:scroll')
   checkScroll() {
 
