@@ -10,6 +10,7 @@ import { SectionContactComponent } from './section2/section-contact/section-cont
 import { SectionAboutComponent } from './section2/section-about/section-about.component';
 import { SectionWorkComponent } from './section2/section-work/section-work.component';
 import { RouterModule } from '@angular/router';
+import { SectionDesignComponent } from './section2/section-design/section-design.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RouterModule } from '@angular/router';
     SectionHomeComponent,
     SectionContactComponent,
     SectionAboutComponent,
-    SectionWorkComponent
+    SectionWorkComponent,
+    SectionDesignComponent
   ],
   imports: [
     BrowserModule,
